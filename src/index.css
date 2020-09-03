@@ -1,0 +1,49 @@
+/* Custom */
+.header {
+  grid-area: header;
+  background-color: #333;
+  text-align: center;
+  color: #aaa;
+
+}
+
+.home {
+  grid-area: home;
+  padding: 20px;
+}
+
+.chatbot {
+  grid-area: chatbot;
+  background-color: #f1f1f1;
+  height: calc(100vh - 266px);
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #333;
+  text-align: center;
+  color: #aaa;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  padding: 10px;
+  position: absolute;
+}
+
+.content {
+  display: grid;
+  grid-template-areas: 
+    'header header header header'
+    'home home home chatbot'
+    'footer footer footer footer';
+  }
+
+
+.rotating-pickle {
+  -webkit-animation:spin 4s linear infinite;
+  -moz-animation:spin 4s linear infinite;
+  animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }

@@ -1,0 +1,23 @@
+.chatbot-conteudo {
+    display: grid;
+    grid-template-rows: 60px auto 80px;
+    height: calc(100vh - 266px);
+    padding: 5px;
+}
+
+.chatbot-header {
+    text-align: center;
+}
+
+.chatbot-dialog {
+    background: #eee;
+    overflow: auto;
+}
+
+.dialog-balloon {
+    width: 500px;
+}
+
+.chatbot-message {
+
+}

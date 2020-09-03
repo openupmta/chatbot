@@ -1,0 +1,4 @@
+ create-react-app chatbot-react-js
+ npm install reactstrap react react-dom
+ yarn add bootstrap
+ yarn start
